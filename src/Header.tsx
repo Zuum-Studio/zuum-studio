@@ -1,34 +1,32 @@
 import { useState } from 'react';
-import { createStyles, Header, Container, Anchor, Group, Burger, Box , Divider, Grid, Center} from '@mantine/core';
+import { createStyles, Header, Container, Anchor, Group, Burger, Box, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
-const HEADER_HEIGHT = 200;
+const HEADER_HEIGHT = 84;
 
 const useStyles = createStyles((theme) => ({
-    header: {
-        padding: 0,
-        margin: 0,
+    headerRows: {
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%'
     },
 
     inner: {
-        height: HEADER_HEIGHT,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        height: HEADER_HEIGHT,
     },
 
     logo: {
+        flexGrow: 1,
         display: 'flex',
         alignItems: 'center',
-        padding: 0,
-        margin: 0,
         justifyContent: 'space-between',
     },
 
     logoDivider: {
-        flexGrow: 4,
-        padding: 0,
-        margin: 0,
+        flexGrow: 1,
     },
 
     burger: {
@@ -94,12 +92,14 @@ interface LinkProps {
 interface ZuumHeaderProps {
     mainLinks: LinkProps[];
     userLinks: LinkProps[];
+    onSelected: (link: string) => void
 }
 
-export function ZuumHeader({ mainLinks, userLinks }: ZuumHeaderProps) {
+export function ZuumHeader({ mainLinks, userLinks, onSelected }: ZuumHeaderProps) {
     const [opened, { toggle }] = useDisclosure(false);
     const { classes, cx } = useStyles();
-    const [active, setActive] = useState(0);
+    const noneActive = -1
+    const [active, setActive] = useState(noneActive);
 
     const mainItems = mainLinks.map((item, index) => (
         <Anchor<'a'>
@@ -108,7 +108,13 @@ export function ZuumHeader({ mainLinks, userLinks }: ZuumHeaderProps) {
             className={cx(classes.mainLink, { [classes.mainLinkActive]: index === active })}
             onClick={(event) => {
                 event.preventDefault();
-                setActive(index);
+                if (index === active) {
+                    setActive(noneActive)
+                    onSelected('')
+                } else {
+                    setActive(index);
+                    onSelected(item.label)
+                }
             }}
         >
             {item.label}
@@ -127,25 +133,20 @@ export function ZuumHeader({ mainLinks, userLinks }: ZuumHeaderProps) {
     ));
 
     return (
-        <Header p="md" className={classes.header} height={HEADER_HEIGHT} mb={120}>
+        <Box className={classes.headerRows}>
 
-            <Container className={classes.logo} p="xs" m="xs" fluid>
-                    <Divider my="sm" />
-                    <Container className={classes.logoDivider}><Divider my="sm" /></Container>
-                    <Container>PORTFOLIO</Container>
-                    <Container className={classes.logoDivider}><Divider my="sm" /></Container>
+            <Header height={HEADER_HEIGHT}>
+                <Container className={classes.inner}>
+                    <Container className={classes.links}>
+                        <Group position="right">{secondaryItems}</Group>
+                        <Group spacing={0} position="right" className={classes.mainLinks}>
+                            {mainItems}
+                        </Group>
+                    </Container>
+                    <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
                 </Container>
-            <Container className={classes.inner} fluid>
 
-                <Container className={classes.links}>
-                    <Group position="right">{secondaryItems}</Group>
-                    <Group spacing={0} position="right" className={classes.mainLinks}>
-                        {mainItems}
-                    </Group>
-                </Container>
-                <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
-            </Container>
-
-        </Header>
+            </Header>
+        </Box>
     );
 }
