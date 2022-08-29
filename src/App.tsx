@@ -1,4 +1,4 @@
-import { Box, Collapse, Container, createStyles, Divider, MantineProvider, Text } from '@mantine/core';
+import { Box, Center, Collapse, Container, createStyles, Divider, MantineProvider, Text, Transition } from '@mantine/core';
 import { useState } from 'react';
 import { ZuumHeader } from './Header'
 
@@ -19,27 +19,39 @@ const useStyles = createStyles((theme) => ({
     height: '100%'
   },
 
-  logo: {
+  grow: {
     flexGrow: 1,
-    display: 'flex',
+  },
+
+  center: {
+    alignItems: 'center',
+  },
+
+  logoCollapse: {
+    height: '100%',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
 
-  content: {
-    flexGrow: 1,
-  },
-
   logoDivider: {
     flexGrow: 1,
+    height: '100%',
   },
 
+  logo: {
+    height: '100%',
+    alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+
+  fillHeight: {
+    height: '100%',
+  }
 }));
 
 // Theme setup: https://mantine.dev/theming/theme-object/#usage
 export default function App() {
-
-  const [content, setContent] = useState('');
   const [selectedMenuItem, setSelectedMenuItem] = useState('');
   const { classes, cx } = useStyles();
 
@@ -72,12 +84,14 @@ export default function App() {
     // }}
     >
       <Box className={classes.main}>
-        <Box className={cx(classes.logo, { [classes.hidden]: !(selectedMenuItem === '') })}>
-          <Divider />
-          <Container className={classes.logoDivider}><Divider /></Container>
-          <Container>PORTFOLIO</Container>
-          <Container className={classes.logoDivider}><Divider /></Container>
-        </Box>
+        <Transition mounted={(selectedMenuItem === '')} transition="slide-down" duration={400} timingFunction="ease">
+          {(styles) =>
+            <Box style={styles} className={classes.logo}>
+              <Box className={classes.grow}><Divider /></Box>
+              <Box>PORTFOLIO</Box>
+              <Box className={classes.grow}><Divider /></Box>
+            </Box>}
+        </Transition>
         <Box>
           {ZuumHeader({
             mainLinks: [
@@ -92,8 +106,8 @@ export default function App() {
             onSelected: (link) => onMenuItemSelected(link)
           })}
         </Box>
-        <Box className={cx(classes.content, { [classes.hidden]: (selectedMenuItem === '') })}>
-          {content}
+        <Box className={cx(classes.grow, { [classes.hidden]: (selectedMenuItem === '') })}>
+          {selectedMenuItem}
         </Box>
       </Box>
     </MantineProvider>
