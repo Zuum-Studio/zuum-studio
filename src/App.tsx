@@ -28,14 +28,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   logoCollapse: {
+    background: 'pink',
+    // // display: 'flex',
+    // flexGrow: 1,
     height: '100%',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-
-  logoDivider: {
-    flexGrow: 1,
-    height: '100%',
+    // alignItems: 'center',
+    // justifyContent: 'space-between',
   },
 
   logo: {
@@ -45,18 +43,34 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
   },
 
-  fillHeight: {
-    height: '100%',
+  overlay: {
+    position: 'fixed',
+    width: '100vw',
+    height: '100vh',
+    zIndex: 2,
+  },
+
+  filler: {
+    height: `calc(100vh - 84px)`,
   }
 }));
 
 // Theme setup: https://mantine.dev/theming/theme-object/#usage
 export default function App() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('');
+  const [shouldHideContent, setShouldHideContent] = useState(true);
   const { classes, cx } = useStyles();
 
   function onMenuItemSelected(link: string) {
     setSelectedMenuItem(link)
+  }
+
+  function noneMenuItemSelected(): boolean {
+    return selectedMenuItem === ''
+  }
+
+  function onMenuItemSelectedTransitionEnd() {
+    setShouldHideContent(!shouldHideContent)
   }
 
   return (
@@ -83,15 +97,19 @@ export default function App() {
     //   },
     // }}
     >
-      <Box className={classes.main}>
-        <Transition mounted={(selectedMenuItem === '')} transition="slide-down" duration={400} timingFunction="ease">
-          {(styles) =>
-            <Box style={styles} className={classes.logo}>
+      <Transition mounted={noneMenuItemSelected()} transition="fade" duration={2000} timingFunction="ease">
+        {(styles) => <div style={styles} className={classes.overlay}>
+            <Box className={classes.logo}>
               <Box className={classes.grow}><Divider /></Box>
               <Box>PORTFOLIO</Box>
               <Box className={classes.grow}><Divider /></Box>
-            </Box>}
-        </Transition>
+            </Box>
+          </div>}
+      </Transition>
+      <Box className={classes.main}>
+          <Collapse className={classes.logoCollapse} in={noneMenuItemSelected()} transitionDuration={2000} onTransitionEnd={() => onMenuItemSelectedTransitionEnd()}>
+            <Box className={classes.filler}></Box>
+          </Collapse>
         <Box>
           {ZuumHeader({
             mainLinks: [
@@ -106,10 +124,15 @@ export default function App() {
             onSelected: (link) => onMenuItemSelected(link)
           })}
         </Box>
-        <Box className={cx(classes.grow, { [classes.hidden]: (selectedMenuItem === '') })}>
+        {/* <Collapse className={cx(classes.grow)} in={!(selectedMenuItem === '')}>
           {selectedMenuItem}
-        </Box>
+        </Collapse> */}
+        {/* <Box className={cx(classes.grow, { [classes.hidden]: (shouldHideContent)})}>
+          {selectedMenuItem}
+        </Box> */}
       </Box>
     </MantineProvider>
   );
 }
+
+
