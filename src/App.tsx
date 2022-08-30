@@ -28,10 +28,10 @@ const useStyles = createStyles((theme) => ({
   },
 
   logoCollapse: {
-    background: 'pink',
+    // background: 'pink',
     // // display: 'flex',
     // flexGrow: 1,
-    height: '100%',
+    // height: '100%',
     // alignItems: 'center',
     // justifyContent: 'space-between',
   },
@@ -41,13 +41,6 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     display: 'flex',
     justifyContent: 'space-between',
-  },
-
-  overlay: {
-    position: 'fixed',
-    width: '100vw',
-    height: '100vh',
-    zIndex: 2,
   },
 
   filler: {
@@ -97,18 +90,15 @@ export default function App() {
     //   },
     // }}
     >
-      <Transition mounted={noneMenuItemSelected()} transition="fade" duration={2000} timingFunction="ease">
-        {(styles) => <div style={styles} className={classes.overlay}>
-            <Box className={classes.logo}>
-              <Box className={classes.grow}><Divider /></Box>
-              <Box>PORTFOLIO</Box>
-              <Box className={classes.grow}><Divider /></Box>
-            </Box>
-          </div>}
-      </Transition>
       <Box className={classes.main}>
           <Collapse className={classes.logoCollapse} in={noneMenuItemSelected()} transitionDuration={2000} onTransitionEnd={() => onMenuItemSelectedTransitionEnd()}>
-            <Box className={classes.filler}></Box>
+            <Box className={classes.filler}>
+              <Box className={classes.logo}>
+                <Box className={classes.grow}><Divider /></Box>
+                <Box>PORTFOLIO</Box>
+                <Box className={classes.grow}><Divider /></Box>
+              </Box>
+            </Box>
           </Collapse>
         <Box>
           {ZuumHeader({
@@ -127,9 +117,9 @@ export default function App() {
         {/* <Collapse className={cx(classes.grow)} in={!(selectedMenuItem === '')}>
           {selectedMenuItem}
         </Collapse> */}
-        {/* <Box className={cx(classes.grow, { [classes.hidden]: (shouldHideContent)})}>
+        <Box className={cx(classes.grow, { [classes.hidden]: (shouldHideContent)})}>
           {selectedMenuItem}
-        </Box> */}
+        </Box>
       </Box>
     </MantineProvider>
   );
