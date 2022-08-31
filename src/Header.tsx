@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createStyles, Header, Container, Anchor, Group, Burger, Box, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
-const HEADER_HEIGHT = 84;
+export const HEADER_HEIGHT = 56;
 
 const useStyles = createStyles((theme) => ({
     headerRows: {
@@ -91,11 +91,10 @@ interface LinkProps {
 
 interface ZuumHeaderProps {
     mainLinks: LinkProps[];
-    userLinks: LinkProps[];
     onSelected: (link: string) => void
 }
 
-export function ZuumHeader({ mainLinks, userLinks, onSelected }: ZuumHeaderProps) {
+export function ZuumHeader({ mainLinks, onSelected }: ZuumHeaderProps) {
     const [opened, { toggle }] = useDisclosure(false);
     const { classes, cx } = useStyles();
     const noneActive = -1
@@ -113,20 +112,9 @@ export function ZuumHeader({ mainLinks, userLinks, onSelected }: ZuumHeaderProps
                     onSelected('')
                 } else {
                     setActive(index);
-                    onSelected(item.label)
+                    onSelected(item.link)
                 }
             }}
-        >
-            {item.label}
-        </Anchor>
-    ));
-
-    const secondaryItems = userLinks.map((item) => (
-        <Anchor<'a'>
-            href={item.link}
-            key={item.label}
-            onClick={(event) => event.preventDefault()}
-            className={classes.secondaryLink}
         >
             {item.label}
         </Anchor>
@@ -138,7 +126,6 @@ export function ZuumHeader({ mainLinks, userLinks, onSelected }: ZuumHeaderProps
             <Header height={HEADER_HEIGHT}>
                 <Container className={classes.inner}>
                     <Container className={classes.links}>
-                        <Group position="right">{secondaryItems}</Group>
                         <Group spacing={0} position="right" className={classes.mainLinks}>
                             {mainItems}
                         </Group>

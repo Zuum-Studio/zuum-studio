@@ -1,22 +1,17 @@
 import { Box, Center, Collapse, Container, createStyles, Divider, MantineProvider, Text, Transition } from '@mantine/core';
 import { useState } from 'react';
-import { ZuumHeader } from './Header'
+import { HEADER_HEIGHT, ZuumHeader } from './Header'
+import { AboutMe } from './AboutMe'
+import { Projects } from './Projects';
+import { Visualisations } from './Visualisations';
 
 const useStyles = createStyles((theme) => ({
   main: {
-    display: 'flex',
     flexDirection: 'column',
-    height: '100vh'
   },
 
   hidden: {
     display: 'none' 
-  },
-
-  appRows: {
-    display: 'flex',
-    flexDirection: 'column',
-    height: '100%'
   },
 
   grow: {
@@ -27,15 +22,6 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
   },
 
-  logoCollapse: {
-    // background: 'pink',
-    // // display: 'flex',
-    // flexGrow: 1,
-    // height: '100%',
-    // alignItems: 'center',
-    // justifyContent: 'space-between',
-  },
-
   logo: {
     height: '100%',
     alignItems: 'center',
@@ -44,26 +30,38 @@ const useStyles = createStyles((theme) => ({
   },
 
   filler: {
-    height: `calc(100vh - 84px)`,
+    height: `calc(100vh - ${HEADER_HEIGHT}px)`,
+  },
+
+  content: {
+    paddingTop: 50,
+    paddingLeft: 200,
+    paddingRight: 200,
+    height: `calc(100vh - ${HEADER_HEIGHT}px)`,
+    overflow: 'auto',
   }
 }));
 
 // Theme setup: https://mantine.dev/theming/theme-object/#usage
 export default function App() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('');
-  const [shouldHideContent, setShouldHideContent] = useState(true);
+  const [displayedContent, setDisplayedContent] = useState('');
+  const contentMap = new Map<string, JSX.Element>([
+    ["aboutMe", <AboutMe />],
+    ["projects", <Projects />],
+    ["visualisations", <Visualisations />],
+  ])
   const { classes, cx } = useStyles();
 
   function onMenuItemSelected(link: string) {
     setSelectedMenuItem(link)
+    if (link !== '') {
+      setDisplayedContent(link)
+    }
   }
 
   function noneMenuItemSelected(): boolean {
     return selectedMenuItem === ''
-  }
-
-  function onMenuItemSelectedTransitionEnd() {
-    setShouldHideContent(!shouldHideContent)
   }
 
   return (
@@ -91,7 +89,7 @@ export default function App() {
     // }}
     >
       <Box className={classes.main}>
-          <Collapse className={classes.logoCollapse} in={noneMenuItemSelected()} transitionDuration={2000} onTransitionEnd={() => onMenuItemSelectedTransitionEnd()}>
+          <Collapse in={noneMenuItemSelected()} transitionDuration={2000}>
             <Box className={classes.filler}>
               <Box className={classes.logo}>
                 <Box className={classes.grow}><Divider /></Box>
@@ -103,22 +101,15 @@ export default function App() {
         <Box>
           {ZuumHeader({
             mainLinks: [
-              { label: "O mnie", link: "aboutme" },
+              { label: "O mnie", link: "aboutMe" },
               { label: "Wizualizacje", link: "visualisations" },
               { label: "Projekty", link: "projects" },
-            ],
-            userLinks: [
-              { label: "POLSKI", link: "sub1" },
-              { label: "ENGLISH", link: "sub2" },
             ],
             onSelected: (link) => onMenuItemSelected(link)
           })}
         </Box>
-        {/* <Collapse className={cx(classes.grow)} in={!(selectedMenuItem === '')}>
-          {selectedMenuItem}
-        </Collapse> */}
-        <Box className={cx(classes.grow, { [classes.hidden]: (shouldHideContent)})}>
-          {selectedMenuItem}
+        <Box className={classes.content}>
+          {contentMap.get(displayedContent)!}
         </Box>
       </Box>
     </MantineProvider>
