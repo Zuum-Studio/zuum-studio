@@ -19,18 +19,18 @@ export function Socials() {
 
     return (
         <Group spacing="xs">
-            <Tooltip label="Pinterest" withArrow>
-                <ActionIcon variant="transparent" className={classes.icon}>
+            <Tooltip label="Pinterest">
+                <ActionIcon variant="transparent" className={classes.icon} component="a" href="https://pinterest.com" target="_blank">
                     <IconBrandPinterest size={18} />
                 </ActionIcon>
             </Tooltip>
-            <Tooltip label="Instagram" withArrow>
-            <ActionIcon variant="transparent" className={classes.icon}>
+            <Tooltip label="Instagram">
+            <ActionIcon variant="transparent" className={classes.icon} component="a" href="https://instagram.com" target="_blank">
                     <IconBrandInstagram size={18} />
                 </ActionIcon>
             </Tooltip>
-            <Tooltip label="Behance" withArrow>
-                <ActionIcon variant="transparent" className={classes.icon}>
+            <Tooltip label="Behance">
+                <ActionIcon variant="transparent" className={classes.icon} component="a" href="https://behance.net" target="_blank">
                     <IconBrandBehance size={18} />
                 </ActionIcon>
             </Tooltip>

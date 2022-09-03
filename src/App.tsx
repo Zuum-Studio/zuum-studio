@@ -1,4 +1,4 @@
-import { Affix, Box, Button, Center, Collapse, Container, createStyles, Divider, MantineProvider, Overlay, Stack, Text, Tooltip, Transition } from '@mantine/core';
+import { Affix, Box, Button, Center, Collapse, Container, createStyles, Divider, MantineProvider, Overlay, Stack, Text, Title, Tooltip, Transition } from '@mantine/core';
 import { useState } from 'react';
 import { HEADER_HEIGHT, ZuumHeader } from './Header'
 import { AboutMe } from './aboutme/AboutMe'
@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     display: 'none' 
   },
 
-  grow: {
+  divider: {
     flexGrow: 1,
   },
 
@@ -92,17 +92,11 @@ export default function App() {
         <Collapse in={noneMenuItemSelected()} transitionDuration={2000}>
           <Box className={classes.filler}>
             <Stack>
-              <Box className={classes.logo}>
-                <Box className={classes.grow}><Divider /></Box>
-                <Box>PORTFOLIO</Box>
-                <Box className={classes.grow}><Divider /></Box>
-              </Box>
+              <Divider color="black" size="md" label={<Title order={1}>PORTFOLIO</Title>} labelPosition="center" />
               <Center>
-                <Stack>
-                  <Center>
-                    <Box>Zuzanna Majcherczyk</Box>
-                  </Center>
-                  <Box>zuzanna.13.18@gmail.com</Box>
+                <Stack spacing="xs">
+                  <Text size="xl">Zuzanna Majcherczyk</Text>
+                  <Text color="gray.6">zuzanna.13.18@gmail.com</Text>
                 </Stack>
               </Center>
             </Stack>
