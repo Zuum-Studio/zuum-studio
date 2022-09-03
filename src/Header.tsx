@@ -1,33 +1,10 @@
 import { useState } from 'react';
-import { createStyles, Header, Container, Anchor, Group, Burger, Box, Divider } from '@mantine/core';
+import { createStyles, Header, Container, Anchor, Group, Burger, Box, Divider, Grid, SimpleGrid, Center, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
-export const HEADER_HEIGHT = 56;
+export const HEADER_HEIGHT = 72;
 
 const useStyles = createStyles((theme) => ({
-    headerRows: {
-        display: 'flex',
-        flexDirection: 'column',
-        height: '100%'
-    },
-
-    inner: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        height: HEADER_HEIGHT,
-    },
-
-    logo: {
-        flexGrow: 1,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-
-    logoDivider: {
-        flexGrow: 1,
-    },
 
     burger: {
         [theme.fn.largerThan('xs')]: {
@@ -36,26 +13,16 @@ const useStyles = createStyles((theme) => ({
     },
 
     links: {
-        paddingTop: theme.spacing.lg,
-        height: HEADER_HEIGHT,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-
+        paddingTop: 30,
         [theme.fn.smallerThan('xs')]: {
             display: 'none',
         },
     },
 
-    mainLinks: {
-        marginRight: -theme.spacing.sm,
-    },
-
     mainLink: {
         textTransform: 'uppercase',
-        fontSize: 13,
+        fontSize: 20,
         color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[6],
-        padding: `7px ${theme.spacing.sm}px`,
         fontWeight: 700,
         borderBottom: '2px solid transparent',
         transition: 'border-color 100ms ease, color 100ms ease',
@@ -63,6 +30,7 @@ const useStyles = createStyles((theme) => ({
         '&:hover': {
             color: theme.colorScheme === 'dark' ? theme.white : theme.black,
             textDecoration: 'none',
+            cursor: 'pointer',
         },
     },
 
@@ -80,7 +48,7 @@ const useStyles = createStyles((theme) => ({
 
     mainLinkActive: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        borderBottomColor: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 5 : 6],
+        borderBottomColor: theme.black
     },
 }));
 
@@ -101,9 +69,7 @@ export function ZuumHeader({ mainLinks, onSelected }: ZuumHeaderProps) {
     const [active, setActive] = useState(noneActive);
 
     const mainItems = mainLinks.map((item, index) => (
-        <Anchor<'a'>
-            href={item.link}
-            key={item.label}
+        <Center><Title order={1}
             className={cx(classes.mainLink, { [classes.mainLinkActive]: index === active })}
             onClick={(event) => {
                 event.preventDefault();
@@ -117,23 +83,19 @@ export function ZuumHeader({ mainLinks, onSelected }: ZuumHeaderProps) {
             }}
         >
             {item.label}
-        </Anchor>
+        </Title></Center>
     ));
 
     return (
-        <Box className={classes.headerRows}>
+        <Header height={HEADER_HEIGHT} withBorder={false}>
+            
+            <Container className={classes.links}>
+                <SimpleGrid cols={3}>
+                    {mainItems}
+                </SimpleGrid>
+            </Container>
 
-            <Header height={HEADER_HEIGHT}>
-                <Container className={classes.inner}>
-                    <Container className={classes.links}>
-                        <Group spacing={0} position="right" className={classes.mainLinks}>
-                            {mainItems}
-                        </Group>
-                    </Container>
-                    <Burger opened={opened} onClick={toggle} className={classes.burger} size="xs" />
-                </Container>
-
-            </Header>
-        </Box>
+            <Burger opened={opened} onClick={toggle} className={classes.burger} size="md" />
+        </Header>
     );
 }

@@ -1,4 +1,4 @@
-import { Affix, Box, Button, Center, Collapse, Container, createStyles, Divider, MantineProvider, Overlay, Stack, Text, Title, Tooltip, Transition } from '@mantine/core';
+import { Affix, Avatar, Box, Button, Center, Collapse, Container, createStyles, Divider, MantineProvider, Overlay, Stack, Text, Title, Tooltip, Transition } from '@mantine/core';
 import { useState } from 'react';
 import { HEADER_HEIGHT, ZuumHeader } from './Header'
 import { AboutMe } from './aboutme/AboutMe'
@@ -97,6 +97,7 @@ export default function App() {
                 <Stack spacing="xs">
                   <Text size="xl">Zuzanna Majcherczyk</Text>
                   <Text color="gray.6">zuzanna.13.18@gmail.com</Text>
+                  <Avatar style={{position: "relative", left: -80, bottom: 70}} size="lg" radius="xl" src="https://www.mooc.org/hubfs/are-free-online-courses-worth-it.jpg" alt="it's me" />
                 </Stack>
               </Center>
             </Stack>
