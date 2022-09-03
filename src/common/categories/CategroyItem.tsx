@@ -8,6 +8,7 @@ const useStyles = createStyles((theme) => ({
         '&:hover': {
             filter: 'none',
             '-webkit-filter': 'grayscale(0)',
+            cursor: 'pointer',
         }
     },
 

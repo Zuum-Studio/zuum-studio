@@ -1,13 +1,15 @@
-import { Box, Center, Collapse, Container, createStyles, Divider, MantineProvider, Text, Transition } from '@mantine/core';
+import { Affix, Box, Button, Center, Collapse, Container, createStyles, Divider, MantineProvider, Overlay, Stack, Text, Tooltip, Transition } from '@mantine/core';
 import { useState } from 'react';
 import { HEADER_HEIGHT, ZuumHeader } from './Header'
 import { AboutMe } from './aboutme/AboutMe'
 import { Projects } from './projects/Projects';
 import { Visualisations } from './visualisations/Visualisations';
+import { Socials } from './Socials';
 
 const useStyles = createStyles((theme) => ({
   main: {
     flexDirection: 'column',
+    zIndex: 1,
   },
 
   hidden: {
@@ -19,14 +21,15 @@ const useStyles = createStyles((theme) => ({
   },
 
   logo: {
-    height: '100%',
     alignItems: 'center',
     display: 'flex',
     justifyContent: 'space-between',
   },
 
   filler: {
+    // position: 'fixed',
     height: `calc(100vh - ${HEADER_HEIGHT}px)`,
+    paddingTop: `calc((100vh - ${HEADER_HEIGHT}px)/2)`,
   },
 
   content: {
@@ -84,16 +87,27 @@ export default function App() {
     //   },
     // }}
     >
+      <Affix position={{ top: 10, right: 10 }}><Socials /></Affix>
       <Box className={classes.main}>
-          <Collapse in={noneMenuItemSelected()} transitionDuration={2000}>
-            <Box className={classes.filler}>
+        <Collapse in={noneMenuItemSelected()} transitionDuration={2000}>
+          <Box className={classes.filler}>
+            <Stack>
               <Box className={classes.logo}>
                 <Box className={classes.grow}><Divider /></Box>
                 <Box>PORTFOLIO</Box>
                 <Box className={classes.grow}><Divider /></Box>
               </Box>
-            </Box>
-          </Collapse>
+              <Center>
+                <Stack>
+                  <Center>
+                    <Box>Zuzanna Majcherczyk</Box>
+                  </Center>
+                  <Box>zuzanna.13.18@gmail.com</Box>
+                </Stack>
+              </Center>
+            </Stack>
+          </Box>
+        </Collapse>
         <Box>
           {ZuumHeader({
             mainLinks: [
