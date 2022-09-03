@@ -1,9 +1,9 @@
 import { Box, Center, Collapse, Container, createStyles, Divider, MantineProvider, Text, Transition } from '@mantine/core';
 import { useState } from 'react';
 import { HEADER_HEIGHT, ZuumHeader } from './Header'
-import { AboutMe } from './AboutMe'
-import { Projects } from './Projects';
-import { Visualisations } from './Visualisations';
+import { AboutMe } from './aboutme/AboutMe'
+import { Projects } from './projects/Projects';
+import { Visualisations } from './visualisations/Visualisations';
 
 const useStyles = createStyles((theme) => ({
   main: {
@@ -16,10 +16,6 @@ const useStyles = createStyles((theme) => ({
 
   grow: {
     flexGrow: 1,
-  },
-
-  center: {
-    alignItems: 'center',
   },
 
   logo: {

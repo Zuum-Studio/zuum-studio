@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     burger: {
-        [theme.fn.largerThan('sm')]: {
+        [theme.fn.largerThan('xs')]: {
             display: 'none',
         },
     },
@@ -42,7 +42,7 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'space-between',
 
-        [theme.fn.smallerThan('sm')]: {
+        [theme.fn.smallerThan('xs')]: {
             display: 'none',
         },
     },
@@ -130,7 +130,7 @@ export function ZuumHeader({ mainLinks, onSelected }: ZuumHeaderProps) {
                             {mainItems}
                         </Group>
                     </Container>
-                    <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+                    <Burger opened={opened} onClick={toggle} className={classes.burger} size="xs" />
                 </Container>
 
             </Header>
