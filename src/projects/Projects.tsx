@@ -45,7 +45,7 @@ export function Projects() {
                         description: "Smutna Stodoła"
                     },
                 ],
-                carousel: false,
+                carousel: true,
                 onSelected: (link: string) => {
                     setActive(link)
                 }

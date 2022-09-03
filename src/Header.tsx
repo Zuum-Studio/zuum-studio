@@ -21,28 +21,12 @@ const useStyles = createStyles((theme) => ({
 
     mainLink: {
         textTransform: 'uppercase',
-        fontSize: 20,
-        color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[6],
-        fontWeight: 700,
+        color: theme.colors.gray[6],
         borderBottom: '2px solid transparent',
-        transition: 'border-color 100ms ease, color 100ms ease',
 
         '&:hover': {
-            color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-            textDecoration: 'none',
+            color: theme.black,
             cursor: 'pointer',
-        },
-    },
-
-    secondaryLink: {
-        color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6],
-        fontSize: theme.fontSizes.xs,
-        textTransform: 'uppercase',
-        transition: 'color 100ms ease',
-
-        '&:hover': {
-            color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-            textDecoration: 'none',
         },
     },
 
@@ -69,7 +53,7 @@ export function ZuumHeader({ mainLinks, onSelected }: ZuumHeaderProps) {
     const [active, setActive] = useState(noneActive);
 
     const mainItems = mainLinks.map((item, index) => (
-        <Center><Title order={1}
+        <Center><Title order={3}
             className={cx(classes.mainLink, { [classes.mainLinkActive]: index === active })}
             onClick={(event) => {
                 event.preventDefault();

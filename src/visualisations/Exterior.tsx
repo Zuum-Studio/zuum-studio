@@ -5,7 +5,6 @@ const child = <Skeleton height={400} animate={false} />;
 export function Exterior() {
     return (
         <Box>
-            Exteriory
             <Grid>
                 <Grid.Col xs={4}>{child}</Grid.Col>
                 <Grid.Col xs={8}>{child}</Grid.Col>

@@ -49,7 +49,7 @@ export function Visualisations() {
                 }
             })}
             </Box>
-            <Box>
+            <Box sx={{marginTop: 60}}>
                 {contentMap.get(active)}
             </Box>
         </Box>

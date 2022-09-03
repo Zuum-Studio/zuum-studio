@@ -5,7 +5,6 @@ const child = <Skeleton height={350} animate={false} />;
 export function Course() {
     return (
         <Box>
-            Kurs
             <Grid>
                 <Grid.Col span={4}>{child}</Grid.Col>
                 <Grid.Col span={4}>{child}</Grid.Col>

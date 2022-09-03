@@ -5,7 +5,6 @@ const child = <Skeleton height={300} animate={false} />;
 export function Interior() {
     return (
         <Box>
-            Wnętrza
             <Grid>
                 <Grid.Col span={6}>{child}</Grid.Col>
                 <Grid.Col span={6}>{child}</Grid.Col>
