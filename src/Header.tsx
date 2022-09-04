@@ -21,16 +21,20 @@ const useStyles = createStyles((theme) => ({
 
     mainLink: {
         textTransform: 'uppercase',
+        fontWeight: 'normal',
         color: theme.colors.gray[6],
-        borderBottom: '2px solid transparent',
+        // borderBottom: '3px solid transparent',
 
         '&:hover': {
+            // fontWeight: 'bold',
             color: theme.black,
             cursor: 'pointer',
+            borderBottomColor: theme.black,
         },
     },
 
     mainLinkActive: {
+        fontWeight: 900,
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         borderBottomColor: theme.black
     },

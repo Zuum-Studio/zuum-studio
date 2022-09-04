@@ -1,4 +1,4 @@
-import { Box, Image, createStyles, Grid } from "@mantine/core";
+import { Text, Image, createStyles, Grid } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
 
@@ -17,44 +17,21 @@ export function AboutMe() {
                 />
             </Grid.Col>
             <Grid.Col span={10}>
-                <Box>
-                    <p>
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    </p>
-                </Box>
+                <Text align="justify">
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                </Text>
             </Grid.Col>
         </Grid>
     )

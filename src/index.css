@@ -26,3 +26,28 @@ body::-webkit-scrollbar {
   display: none;
 }
 */
+
+.mantine-Carousel-control {
+  background: transparent;
+  color:"green";
+  border: 0;
+  border-radius: 0%;
+  box-shadow: none;
+}
+
+.mantine-Carousel-root {
+  overflow: visible;
+}
+
+.mantine-Carousel-viewport {
+  overflow: hidden !important;
+}
+
+.mantine-Carousel-controls {
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.mantine-Carousel-indicator {
+  margin-bottom: 40px;
+}

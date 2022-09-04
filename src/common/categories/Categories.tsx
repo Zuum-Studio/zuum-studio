@@ -1,5 +1,6 @@
 import { Carousel } from "@mantine/carousel";
-import { Box, SimpleGrid, Image, Center, Stack, createStyles } from "@mantine/core";
+import { Box, SimpleGrid, Image, Center, Stack, createStyles, ActionIcon } from "@mantine/core";
+import { IconArrowRight, IconCaretLeft, IconCaretRight } from "@tabler/icons";
 import { useState } from "react";
 import { CategoryItem } from "./CategroyItem";
 
@@ -35,23 +36,17 @@ export function Categories(props: CategoriesProps) {
         )
     }
 
-    function test() {
-        return                         <Image 
-        height={250}
-        src="https://images.unsplash.com/photo-1622957405193-4203463571b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhcm58ZW58MHx8MHx8&w=1000&q=80"
-
-    />
-    }
-
     if (props.carousel) {
         return (
             <Carousel
                 withIndicators
-
-                slideSize="33.333333%"
-                slideGap="md"
+                slideSize="33.333%"
+                slideGap="xl"
                 loop
-                align="start"
+                controlSize={25}
+                previousControlIcon={<IconCaretLeft size={25} fill="black" />}
+                nextControlIcon={<IconCaretRight size={25} fill="black" />}
+                align="center"
                 slidesToScroll={1}
             >
                 {props.items.map((item, index) => (<Carousel.Slide> {createItem(item)} </Carousel.Slide>))}
