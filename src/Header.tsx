@@ -29,14 +29,14 @@ const useStyles = createStyles((theme) => ({
             // fontWeight: 'bold',
             color: theme.black,
             cursor: 'pointer',
-            borderBottomColor: theme.black,
+            // borderBottomColor: theme.black,
         },
     },
 
     mainLinkActive: {
         fontWeight: 900,
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        borderBottomColor: theme.black
+        color: theme.black,
+        // borderBottomColor: theme.black
     },
 }));
 
