@@ -16,24 +16,29 @@ const useStyles = createStyles((theme) => ({
 
 export function Socials() {
     const { classes, cx } = useStyles();
+    const iconSize = 18
 
     return (
         <Group spacing="xs">
-            <Tooltip label="Pinterest">
-                <ActionIcon variant="transparent" className={classes.icon} component="a" href="https://pinterest.com" target="_blank">
-                    <IconBrandPinterest size={18} />
-                </ActionIcon>
-            </Tooltip>
-            <Tooltip label="Instagram">
-            <ActionIcon variant="transparent" className={classes.icon} component="a" href="https://instagram.com" target="_blank">
-                    <IconBrandInstagram size={18} />
-                </ActionIcon>
-            </Tooltip>
-            <Tooltip label="Behance">
-                <ActionIcon variant="transparent" className={classes.icon} component="a" href="https://behance.net" target="_blank">
-                    <IconBrandBehance size={18} />
-                </ActionIcon>
-            </Tooltip>
+            <SocialItem icon={<IconBrandPinterest size={iconSize} />} label="PINTEREST" url="https://pinterest.com"/>
+            <SocialItem icon={<IconBrandInstagram size={iconSize} />} label="INSTAGRAM" url="https://instagram.com"/>
+            <SocialItem icon={<IconBrandBehance size={iconSize} />} label="BEHANCE" url="https://behance.net"/>
         </Group>
     )
+
+    type SocialItemProps = {
+        icon: React.ReactNode,
+        url: string,
+        label: string,
+    }
+    function SocialItem(props: SocialItemProps) {
+        return (
+            <Tooltip color="white" style={{color: "black", fontSize: 12, fontWeight: 900}} label={props.label} transition="slide-left" transitionDuration={300}>
+            <ActionIcon variant="transparent" className={classes.icon} component="a" href={props.url} target="_blank">
+                {props.icon}
+            </ActionIcon>
+            </Tooltip>
+        );
+
+    }
 }

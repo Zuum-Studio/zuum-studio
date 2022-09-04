@@ -1,4 +1,4 @@
-import { Text, Image, createStyles, Grid } from "@mantine/core";
+import { Text, Image, createStyles, Grid, Center } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
 
@@ -9,14 +9,17 @@ export function AboutMe() {
 
     return (
         <Grid>
-            <Grid.Col span={2}>
-                <Image
-                    radius="md"
-                    src="https://www.greenbiz.com/sites/default/files/2022-04/beef%20cow_0.jpg"
-                    alt="me"
-                />
+            <Grid.Col span={6}>
+                <Center sx={{height: "100%"}}>
+                    <Image
+                        width="70%"
+                        radius="md"
+                        src="https://www.greenbiz.com/sites/default/files/2022-04/beef%20cow_0.jpg"
+                        alt="me"
+                    />
+                </Center>
             </Grid.Col>
-            <Grid.Col span={10}>
+            <Grid.Col span={6}>
                 <Text align="justify">
                 Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
                 Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.

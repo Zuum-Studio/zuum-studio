@@ -51,3 +51,19 @@ body::-webkit-scrollbar {
 .mantine-Carousel-indicator {
   margin-bottom: 40px;
 }
+
+::-webkit-scrollbar {
+  width: 21px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-left: 7px solid white;
+  border-right: 7px solid white;
+}

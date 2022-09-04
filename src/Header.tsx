@@ -21,7 +21,7 @@ const useStyles = createStyles((theme) => ({
 
     mainLink: {
         textTransform: 'uppercase',
-        fontWeight: 'normal',
+        fontWeight: "normal",
         color: theme.colors.gray[6],
         // borderBottom: '3px solid transparent',
 

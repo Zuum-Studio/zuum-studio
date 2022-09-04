@@ -41,7 +41,7 @@ export function Categories(props: CategoriesProps) {
             <Carousel
                 withIndicators
                 slideSize="33.333%"
-                slideGap="xl"
+                slideGap="md"
                 loop
                 controlSize={25}
                 previousControlIcon={<IconCaretLeft size={25} fill="black" />}

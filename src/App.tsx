@@ -29,7 +29,6 @@ const useStyles = createStyles((theme) => ({
   filler: {
     // position: 'fixed',
     height: `calc(100vh - ${HEADER_HEIGHT}px)`,
-
   },
 
   content: {
@@ -38,7 +37,9 @@ const useStyles = createStyles((theme) => ({
     paddingLeft: 200,
     paddingRight: 200,
     height: `calc(100vh - ${HEADER_HEIGHT}px)`,
-    overflow: 'auto',
+    overflowY: 'scroll',
+    marginRight: 13,
+    marginLeft: 13,
   }
 }));
 

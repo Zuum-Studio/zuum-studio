@@ -1,4 +1,4 @@
-import { Title, Box, Image, Center, Stack, createStyles } from "@mantine/core";
+import { Text, Box, Image, Center, Stack, createStyles } from "@mantine/core";
 import { useState } from "react";
 
 const useStyles = createStyles((theme) => ({
@@ -16,6 +16,7 @@ const useStyles = createStyles((theme) => ({
 
         color: theme.colors.gray[6],
         textTransform: 'uppercase',
+        fontWeight: 200,
     },
 
     activeItemImage: {
@@ -23,10 +24,7 @@ const useStyles = createStyles((theme) => ({
         '-webkit-filter': 'grayscale(0)',
 
         color: theme.black,
-    },
-
-    mainLink: {
-
+        fontWeight: 600,
     },
 }));
 
@@ -49,7 +47,7 @@ export function CategoryItem(props: CategoryItemProps) {
                             src={props.imageSrc}
                             onClick={() => props.onSelected()}
                         />
-                        <Center><Title order={5}>{props.description}</Title></Center>
+                        <Center><Text>{props.description}</Text></Center>
                 </Stack>
             </Box>
     )
