@@ -14,7 +14,7 @@ export function AboutMe() {
                     <Image
                         width="70%"
                         radius="md"
-                        src="https://www.greenbiz.com/sites/default/files/2022-04/beef%20cow_0.jpg"
+                        src="zuum-studio/logo192.png"
                         alt="me"
                     />
                 </Center>
