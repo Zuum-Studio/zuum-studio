@@ -47,7 +47,7 @@ export function CategoryItem(props: CategoryItemProps) {
                             src={props.imageSrc}
                             onClick={() => props.onSelected()}
                         />
-                        <Center><Text>{props.description}</Text></Center>
+                        <Center><Text align="center">{props.description}</Text></Center>
                 </Stack>
             </Box>
     )

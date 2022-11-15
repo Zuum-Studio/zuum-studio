@@ -2,7 +2,8 @@
 import { Box, Center, createStyles, Image, SimpleGrid } from "@mantine/core";
 import { useState } from "react";
 import { Categories } from "../common/categories/Categories";
-import { ProjectDetails } from "./ProjectDetails";
+import { ProjectDolinaPradnika } from "./ProjectDolinaPradnika";
+import { ProjectOsrodekTerapii } from "./ProjectOsrodekTerapii";
 
 const useStyles = createStyles((theme) => ({
     grouping: {
@@ -15,8 +16,8 @@ export function Projects() {
     const [active, setActive] = useState('');
 
     const contentMap = new Map<string, JSX.Element>([
-        ["1", <ProjectDetails title="asdf" subtitle="asdf" description="asdf"/>],
-        ["exterior", <></>],
+        ["project-dolina-pradnika", <ProjectDolinaPradnika/>],
+        ["project-osrodek-terapii", <ProjectOsrodekTerapii/>],
         ["course", <></>],
     ])
 
@@ -27,13 +28,13 @@ export function Projects() {
                 items: [
                     {
                         imageSrc: "zuum-studio/images/projects/dolina_pradnika/finalny kadr.jpg",
-                        link: "1",
+                        link: "project-dolina-pradnika",
                         description: "Wielorodzinny zespół mieszkaniowy w dolinie prądnika",
                     },
                     {
                         imageSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Barn_Barber%C3%AAche_Mar_2011.jpg/220px-Barn_Barber%C3%AAche_Mar_2011.jpg",
-                        link: "2",
-                        description: "Inna Stodoła"
+                        link: "project-osrodek-terapii",
+                        description: "Ośrodek Terapii dla Osób Dorosłych z Autyzmem w Krakowie"
                     },
                     {
                         imageSrc: "https://assets.gamepur.com/wp-content/uploads/2022/05/15130111/Barn-in-Minecraft.jpg",
