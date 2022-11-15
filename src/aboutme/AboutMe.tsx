@@ -20,21 +20,21 @@ export function AboutMe() {
                 </Center>
             </Grid.Col>
             <Grid.Col span={6}>
-                <Text align="justify">
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                </Text>
+                    <Text align="justify">
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    </Text>
             </Grid.Col>
         </Grid>
     )

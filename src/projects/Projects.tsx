@@ -2,6 +2,7 @@
 import { Box, Center, createStyles, Image, SimpleGrid } from "@mantine/core";
 import { useState } from "react";
 import { Categories } from "../common/categories/Categories";
+import { ProjectDetails } from "./ProjectDetails";
 
 const useStyles = createStyles((theme) => ({
     grouping: {
@@ -14,7 +15,7 @@ export function Projects() {
     const [active, setActive] = useState('');
 
     const contentMap = new Map<string, JSX.Element>([
-        ["1", <></>],
+        ["1", <ProjectDetails title="asdf" subtitle="asdf" description="asdf"/>],
         ["exterior", <></>],
         ["course", <></>],
     ])
@@ -25,9 +26,9 @@ export function Projects() {
             {Categories({
                 items: [
                     {
-                        imageSrc: "https://images.unsplash.com/photo-1622957405193-4203463571b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhcm58ZW58MHx8MHx8&w=1000&q=80",
+                        imageSrc: "zuum-studio/images/projects/dolina_pradnika/finalny kadr.jpg",
                         link: "1",
-                        description: "Stodoła",
+                        description: "Wielorodzinny zespół mieszkaniowy w dolinie prądnika",
                     },
                     {
                         imageSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Barn_Barber%C3%AAche_Mar_2011.jpg/220px-Barn_Barber%C3%AAche_Mar_2011.jpg",

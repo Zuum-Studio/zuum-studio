@@ -28,17 +28,17 @@ export function Visualisations() {
             {Categories({
                 items: [
                     {
-                        imageSrc: "https://media.baamboozle.com/uploads/images/249986/1611079078_215186",
+                        imageSrc: "zuum-studio/images/visualisations/course/interiory.jpg",
                         link: "interior",
                         description: "Wnętrza",
                     },
                     {
-                        imageSrc: "https://media.istockphoto.com/photos/hurricane-damage-picture-id182171478?k=20&m=182171478&s=612x612&w=0&h=eEG6jORRmR5DyF36bj4rjoDcLQA5_gClnJRGEcRO8mo=",
+                        imageSrc: "zuum-studio/images/visualisations/course/exteriory.jpg",
                         link: "exterior",
                         description: "Exteriory"
                     },
                     {
-                        imageSrc: "https://www.mooc.org/hubfs/are-free-online-courses-worth-it.jpg",
+                        imageSrc: "zuum-studio/images/visualisations/course/kurs.jpg",
                         link: "course",
                         description: "Kurs"
                     },

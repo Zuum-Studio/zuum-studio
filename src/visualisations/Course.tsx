@@ -6,24 +6,42 @@ export function Course() {
     return (
         <Box>
             <Grid>
-                <Grid.Col span={4}>{child}</Grid.Col>
-                <Grid.Col span={4}>{child}</Grid.Col>
-                <Grid.Col span={4}>{child}</Grid.Col>
-                <Grid.Col span={6}>
+                <Grid.Col span={12}>
+                <Center sx={{height: "100%", marginLeft: "160px", marginRight: "70px"}}>
+                    <Image
+                        width="90%"
+                        radius="md"
+                        src="zuum-studio/images/visualisations/course/kurs_certyfikat.jpg"
+                        alt="me"/>
+                </Center>
+                </Grid.Col>
+                <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col>
+                <Grid.Col span={3}>
                     <Image
                         width="100%"
                         radius="md"
-                        src="zuum-studio/images/course/kurs_certyfikat.jpg"
+                        src="zuum-studio/images/visualisations/course/kurs_interior.jpg"
                         alt="me"
                     /></Grid.Col>
-                <Grid.Col span={6}>
-                    <Center sx={{height: "100%", marginLeft: "100px", marginRight: "100px"}}>
-                        <Text align="justify">
-                            Na tym kursie nauczyłam się robić bardzo fajne obrazki z domkami. Na tym kursie nauczyłam się robić bardzo fajne obrazki z domkami. Na tym kursie nauczyłam się robić bardzo fajne obrazki z domkami. 
-                            Na tym kursie nauczyłam się robić bardzo fajne obrazki z domkami. Na tym kursie nauczyłam się robić bardzo fajne obrazki z domkami. Na tym kursie nauczyłam się robić bardzo fajne obrazki z domkami. 
-                        </Text>
-                    </Center>
+                <Grid.Col span={1}></Grid.Col>
+                <Grid.Col span={4}> 
+                    <Center sx={{height: "100%"}}>
+                        <Image
+                            width="100%"
+                            radius="md"
+                            src="zuum-studio/images/visualisations/course/kurs_exterior.jpg"
+                            alt="me"
+                    /></Center>
                 </Grid.Col>
+                <Grid.Col span={1}></Grid.Col>
+                <Grid.Col span={3}>
+                    <Image
+                        width="100%"
+                        radius="md"
+                        src="zuum-studio/images/visualisations/course/kurs_closeup.jpg"
+                        alt="me"
+                /></Grid.Col>
+                <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col> 
             </Grid>
         </Box>
     );
