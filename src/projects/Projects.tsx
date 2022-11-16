@@ -32,7 +32,7 @@ export function Projects() {
                         description: "Wielorodzinny zespół mieszkaniowy w dolinie prądnika",
                     },
                     {
-                        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Barn_Barber%C3%AAche_Mar_2011.jpg/220px-Barn_Barber%C3%AAche_Mar_2011.jpg",
+                        imageSrc: "images/projects/osrodek_terapii/frontViz.jpg",
                         link: "project-osrodek-terapii",
                         description: "Ośrodek Terapii dla Osób Dorosłych z Autyzmem w Krakowie"
                     },
