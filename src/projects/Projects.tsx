@@ -44,7 +44,7 @@ export function Projects() {
                         description: "Stodoła w Minecraft"
                     },
                     {
-                        imageSrc: "https://i.cbc.ca/1.3355986.1449605277!/fileImage/httpImage/happy-barn-alberta.jpg",
+                        imageSrc: "images/projects/pawilon/vizMain.jpg",
                         link: "project-pawilon",
                         description: "PAWILON ARCHEOLOGICZNY W WIŚLICY"
                     },

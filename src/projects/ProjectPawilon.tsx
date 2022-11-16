@@ -16,25 +16,26 @@ export function ProjectPawilon() {
             <Grid>
                 <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col>
                 <Grid.Col xs={12}>
-                    <MainImageTitle title="WIELORODZINNY ZESPÓŁ MIESZKANIOWY W DOLINIE PRĄDNIKA" description1="STOPIEŃ II, ROK I, SEMESTR I, ROK AKADEMICKI 2019/2020" 
-                    subtitle="" image="images/projects/dolina_pradnika/finalnyKadr.jpg" 
-                    description2="INSTYTUT PROJEKTOWANIA URBANISTYCZNEGO A-31" 
-                    description3="PROWADZĄCY PRZEDMIOT: DR HAB. INŻ. ARCH. MARIUSZ TWARDOWSKI, PROWADZĄCY GRUPĘ: MGR INŻ. ARCH. JULIAN FRANTA"
-                    description4="PROJEKT WYKONANY Z MGR INŻ. ARCH. IWONĄ KOPTĄ"></MainImageTitle>
+                    <MainImageTitle title="PAWILON ARCHEOLOGICZNY W WIŚLICY" description1="STOPIEŃ II, ROK I, SEMESTR I, ROK AKADEMICKI 2019/2020" 
+                    subtitle="" image="images/projects/pawilon/vizMain.jpg" 
+                    description2="KATEDRA HISTORII ARCHITEKTURY I KONSERWACJI ZABYTKÓW" 
+                    description3="PROWADZĄCY PRZEDMIOT: PROF. ZW. DR. HAB. INŻ. ARCH. ANDRZEJ KADŁUCZKA, PROWADZĄCA GRUPĘ: MGR INŻ. ARCH. MARTA STACHURSKA"
+                    description4=""></MainImageTitle>
                 </Grid.Col>   
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
                 <Grid.Col xs={12}> 
                     <Text align="justify">
-                        Projekt miał na celu stworzenie koncepcji urbanistyczno - architektonicznej obszaru zlokalizowanego w północnej części Krakowa (Prądnik Biały i wieś Zielonki). 
-                        Teren przeznaczony jest pod zabudowę mieszkaniową wielorodzinną oraz towarzyszącą jej zabudowę usługową. 
-                        Głównym założeniem projektu było zachowanie istniejącego użytku ekologicznego “Dolina Prądnika” i połączenie go z nową funkcją mieszkaniową. 
+                    Głównym założeniem projektu była rewitalizacja Pawilonu Archeologicznego w Wiślicy. 
+                    Obecnie obiekt posiada tylko jedną salę wystawową która zawiera główny zabytek eksponowany w pawilonie. 
+                    Brakuje funkcji towarzyszących takich jak sanitariaty, pomieszczenia socjalne oraz hol wejściowy. 
+                    Dzięki powiększeniu działki uzyskałam możliwość dodania wyżej wymienionych funkcji oraz powiększyć obiekt o jeszcze jedną salę wystawową.  
                     </Text>
                 </Grid.Col> 
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
                 <Grid.Col xs={6}>
                     <Carousel
                         withIndicators
-                        slideSize="80%"
+                        slideSize="100%"
                         slideGap={50}
                         loop
                         // controlSize={25}
@@ -47,21 +48,21 @@ export function ProjectPawilon() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/schematFunkcjonalny.jpg"
+                                src="images/projects/pawilon/analizaFunkcji.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/schematKomunikacji.jpg"
+                                src="images/projects/pawilon/analizaKomunikacji.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/schematZieleni.jpg"
+                                src="images/projects/pawilon/analizaZieleni.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -73,7 +74,13 @@ export function ProjectPawilon() {
                         </Text>
                     </Center>
                 </Grid.Col> 
-                <Grid.Col xs={1}></Grid.Col>
+                <Grid.Col xs={12}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/analizaStratygraficzna.jpg"
+                                alt="me"/>
+                    </Grid.Col>
                 <Grid.Col xs={10}>
                     <Image
                                 width="100%"
