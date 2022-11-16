@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d584d237.css",
-    "main.js": "/static/js/main.a9b0edf4.js",
-    "static/js/787.8d439a04.chunk.js": "/static/js/787.8d439a04.chunk.js",
-    "index.html": "/index.html",
-    "main.d584d237.css.map": "/static/css/main.d584d237.css.map",
-    "main.a9b0edf4.js.map": "/static/js/main.a9b0edf4.js.map",
-    "787.8d439a04.chunk.js.map": "/static/js/787.8d439a04.chunk.js.map"
+    "main.css": "/zuum-studio/static/css/main.d584d237.css",
+    "main.js": "/zuum-studio/static/js/main.4fe1a9fd.js",
+    "static/js/787.8d439a04.chunk.js": "/zuum-studio/static/js/787.8d439a04.chunk.js",
+    "index.html": "/zuum-studio/index.html",
+    "main.d584d237.css.map": "/zuum-studio/static/css/main.d584d237.css.map",
+    "main.4fe1a9fd.js.map": "/zuum-studio/static/js/main.4fe1a9fd.js.map",
+    "787.8d439a04.chunk.js.map": "/zuum-studio/static/js/787.8d439a04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d584d237.css",
-    "static/js/main.a9b0edf4.js"
+    "static/js/main.4fe1a9fd.js"
   ]
 }
