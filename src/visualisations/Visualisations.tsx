@@ -28,17 +28,17 @@ export function Visualisations() {
             {Categories({
                 items: [
                     {
-                        imageSrc: "zuum-studio/images/visualisations/course/interiory.jpg",
+                        imageSrc: "images/visualisations/course/interiory.jpg",
                         link: "interior",
                         description: "Wnętrza",
                     },
                     {
-                        imageSrc: "zuum-studio/images/visualisations/course/exteriory.jpg",
+                        imageSrc: "images/visualisations/course/exteriory.jpg",
                         link: "exterior",
                         description: "Exteriory"
                     },
                     {
-                        imageSrc: "zuum-studio/images/visualisations/course/kurs.jpg",
+                        imageSrc: "images/visualisations/course/kurs.jpg",
                         link: "course",
                         description: "Kurs"
                     },

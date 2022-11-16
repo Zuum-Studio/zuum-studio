@@ -18,7 +18,7 @@ export function ProjectOsrodekTerapii() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/mainViz.jpg"
+                                src="images/projects/osrodek_terapii/mainViz.jpg"
                                 alt="me"/>
                     </Grid.Col>   
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
@@ -50,7 +50,7 @@ export function ProjectOsrodekTerapii() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/analizaFunkcjonalna.jpg"
+                                src="images/projects/osrodek_terapii/analizaFunkcjonalna.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -67,63 +67,63 @@ export function ProjectOsrodekTerapii() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/aksonometria.jpg"
+                                src="images/projects/osrodek_terapii/aksonometria.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={12}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/zagospodarowanie1000.jpg"
+                                src="images/projects/osrodek_terapii/zagospodarowanie1000.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={8}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/zagospodarowanie500.jpg"
+                                src="images/projects/osrodek_terapii/zagospodarowanie500.jpg"
                                 alt="me"/>
                     </Grid.Col> 
                 <Grid.Col xs={4}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/legenda1.jpg"
+                                src="images/projects/osrodek_terapii/legenda1.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={4}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/zdjecie1.jpg"
+                                src="images/projects/osrodek_terapii/zdjecie1.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={4}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/zdjecie2.jpg"
+                                src="images/projects/osrodek_terapii/zdjecie2.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={4}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/zdjecie3.jpg"
+                                src="images/projects/osrodek_terapii/zdjecie3.jpg"
                                 alt="me"/>
                     </Grid.Col> 
                 <Grid.Col xs={6}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/schematFunkcji.jpg"
+                                src="images/projects/osrodek_terapii/schematFunkcji.jpg"
                                 alt="me"/>
                     </Grid.Col> 
                     <Grid.Col xs={6}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/schematZieleni.jpg"
+                                src="images/projects/osrodek_terapii/schematZieleni.jpg"
                                 alt="me"/>
                     </Grid.Col>  
                 <Grid.Col xs={12}>
@@ -141,7 +141,7 @@ export function ProjectOsrodekTerapii() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/rzutParteru.jpg"
+                                src="images/projects/osrodek_terapii/rzutParteru.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -150,42 +150,42 @@ export function ProjectOsrodekTerapii() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii//greenhouseViz.jpg"
+                                src="images/projects/osrodek_terapii//greenhouseViz.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={4}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/frontgardenViz.jpg"
+                                src="images/projects/osrodek_terapii/frontgardenViz.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={4}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/gardenViz.jpg"
+                                src="images/projects/osrodek_terapii/gardenViz.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/poolViz.jpg"
+                                src="images/projects/osrodek_terapii/poolViz.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/sensoryViz.jpg"
+                                src="images/projects/osrodek_terapii/sensoryViz.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/elewacja1.jpg"
+                                src="images/projects/dolina_pradnika/elewacja1.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
@@ -211,7 +211,7 @@ export function ProjectOsrodekTerapii() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/osrodek_terapii/plansza1.jpg"
+                                src="images/projects/osrodek_terapii/plansza1.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>

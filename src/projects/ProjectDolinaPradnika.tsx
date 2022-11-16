@@ -18,7 +18,7 @@ export function ProjectDolinaPradnika() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/finalny kadr.jpg"
+                                src="images/projects/dolina_pradnika/finalny kadr.jpg"
                                 alt="me"/>
                     </Grid.Col>   
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
@@ -45,7 +45,7 @@ export function ProjectDolinaPradnika() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/schemat funkcjonalny.jpg"
+                                src="images/projects/dolina_pradnika/schemat funkcjonalny.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -62,21 +62,21 @@ export function ProjectDolinaPradnika() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/perspektywa.jpg"
+                                src="images/projects/dolina_pradnika/perspektywa.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={12}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/1_1000.jpg"
+                                src="images/projects/dolina_pradnika/1_1000.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={12}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/1_500.jpg"
+                                src="images/projects/dolina_pradnika/1_500.jpg"
                                 alt="me"/>
                     </Grid.Col> 
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
@@ -90,7 +90,7 @@ export function ProjectDolinaPradnika() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/kadr_02.jpg"
+                                src="images/projects/dolina_pradnika/kadr_02.jpg"
                                 alt="me"/>
                     </Grid.Col> 
                 <Grid.Col xs={12}>
@@ -108,7 +108,7 @@ export function ProjectDolinaPradnika() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/rzut parteru.jpg"
+                                src="images/projects/dolina_pradnika/rzut parteru.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -117,42 +117,42 @@ export function ProjectDolinaPradnika() {
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/przekrój_a-a.jpg"
+                                src="images/projects/dolina_pradnika/przekrój_a-a.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={12}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/przekrój_b-b.jpg"
+                                src="images/projects/dolina_pradnika/przekrój_b-b.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={6}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/elewacja1.jpg"
+                                src="images/projects/dolina_pradnika/elewacja1.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/elewacja2.jpg"
+                                src="images/projects/dolina_pradnika/elewacja2.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/elewacja3.jpg"
+                                src="images/projects/dolina_pradnika/elewacja3.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/elewacja1.jpg"
+                                src="images/projects/dolina_pradnika/elewacja1.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
@@ -178,7 +178,7 @@ export function ProjectDolinaPradnika() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="zuum-studio/images/projects/dolina_pradnika/01.jpg"
+                                src="images/projects/dolina_pradnika/01.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>

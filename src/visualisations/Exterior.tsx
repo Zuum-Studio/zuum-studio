@@ -10,14 +10,14 @@ export function Exterior() {
                 <Image
                             width="100%"
                             radius="md"
-                            src="zuum-studio/images/visualisations/exteriors/01_kurs.jpg"
+                            src="images/visualisations/exteriors/01_kurs.jpg"
                             alt="me"/>
                             </Grid.Col>
                 <Grid.Col xs={8}>
                 <Image
                             width="100%"
                             radius="md"
-                            src="zuum-studio/images/visualisations/exteriors/02_urb.jpg"
+                            src="images/visualisations/exteriors/02_urb.jpg"
                             alt="me"/>
                             </Grid.Col>
                 <Grid.Col xs={8}>{child}</Grid.Col>

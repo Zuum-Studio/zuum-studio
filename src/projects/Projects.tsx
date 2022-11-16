@@ -27,7 +27,7 @@ export function Projects() {
             {Categories({
                 items: [
                     {
-                        imageSrc: "zuum-studio/images/projects/dolina_pradnika/finalny kadr.jpg",
+                        imageSrc: "images/projects/dolina_pradnika/finalny kadr.jpg",
                         link: "project-dolina-pradnika",
                         description: "Wielorodzinny zespół mieszkaniowy w dolinie prądnika",
                     },

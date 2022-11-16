@@ -11,7 +11,7 @@ export function Course() {
                     <Image
                         width="90%"
                         radius="md"
-                        src="zuum-studio/images/visualisations/course/kurs_certyfikat.jpg"
+                        src="images/visualisations/course/kurs_certyfikat.jpg"
                         alt="me"/>
                 </Center>
                 </Grid.Col>
@@ -20,7 +20,7 @@ export function Course() {
                     <Image
                         width="100%"
                         radius="md"
-                        src="zuum-studio/images/visualisations/course/kurs_interior.jpg"
+                        src="images/visualisations/course/kurs_interior.jpg"
                         alt="me"
                     /></Grid.Col>
                 <Grid.Col span={1}></Grid.Col>
@@ -29,7 +29,7 @@ export function Course() {
                         <Image
                             width="100%"
                             radius="md"
-                            src="zuum-studio/images/visualisations/course/kurs_exterior.jpg"
+                            src="images/visualisations/course/kurs_exterior.jpg"
                             alt="me"
                     /></Center>
                 </Grid.Col>
@@ -38,7 +38,7 @@ export function Course() {
                     <Image
                         width="100%"
                         radius="md"
-                        src="zuum-studio/images/visualisations/course/kurs_closeup.jpg"
+                        src="images/visualisations/course/kurs_closeup.jpg"
                         alt="me"
                 /></Grid.Col>
                 <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col> 
