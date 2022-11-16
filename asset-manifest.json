@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/zuum-studio/static/css/main.5788222d.css",
-    "main.js": "/zuum-studio/static/js/main.ffa1d960.js",
+    "main.css": "/zuum-studio/static/css/main.d584d237.css",
+    "main.js": "/zuum-studio/static/js/main.bcb020a1.js",
     "static/js/787.8d439a04.chunk.js": "/zuum-studio/static/js/787.8d439a04.chunk.js",
     "index.html": "/zuum-studio/index.html",
-    "main.5788222d.css.map": "/zuum-studio/static/css/main.5788222d.css.map",
-    "main.ffa1d960.js.map": "/zuum-studio/static/js/main.ffa1d960.js.map",
+    "main.d584d237.css.map": "/zuum-studio/static/css/main.d584d237.css.map",
+    "main.bcb020a1.js.map": "/zuum-studio/static/js/main.bcb020a1.js.map",
     "787.8d439a04.chunk.js.map": "/zuum-studio/static/js/787.8d439a04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5788222d.css",
-    "static/js/main.ffa1d960.js"
+    "static/css/main.d584d237.css",
+    "static/js/main.bcb020a1.js"
   ]
 }
