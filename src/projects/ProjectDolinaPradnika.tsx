@@ -1,6 +1,7 @@
-import { Box, Image, createStyles, Grid, Skeleton, Text, Center } from "@mantine/core";
+import { Box, Image, createStyles, Grid, Skeleton, Text, Center, Title, } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import { IconArrowRight, IconCaretLeft, IconCaretRight } from "@tabler/icons";
+import { MainImageTitle } from "../common/MainImageTitle";
 
 const child = <Skeleton height={400} animate={false} />;
 const useStyles = createStyles((theme) => ({
@@ -15,12 +16,12 @@ export function ProjectDolinaPradnika() {
             <Grid>
                 <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col>
                 <Grid.Col xs={12}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/finalny kadr.jpg"
-                                alt="me"/>
-                    </Grid.Col>   
+                    <MainImageTitle title="WIELORODZINNY ZESPÓŁ MIESZKANIOWY W DOLINIE PRĄDNIKA" description1="STOPIEŃ II, ROK I, SEMESTR I, ROK AKADEMICKI 2019/2020" 
+                    subtitle="" image="images/projects/dolina_pradnika/finalnyKadr.jpg" 
+                    description2="INSTYTUT PROJEKTOWANIA URBANISTYCZNEGO A-31" 
+                    description3="PROWADZĄCY PRZEDMIOT: DR HAB. INŻ. ARCH. MARIUSZ TWARDOWSKI, PROWADZĄCY GRUPĘ: MGR INŻ. ARCH. JULIAN FRANTA"
+                    description4="PROJEKT WYKONANY Z MGR INŻ. ARCH. IWONĄ KOPTĄ"></MainImageTitle>
+                </Grid.Col>   
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
                 <Grid.Col xs={12}> 
                     <Text align="justify">
@@ -34,6 +35,7 @@ export function ProjectDolinaPradnika() {
                     <Carousel
                         withIndicators
                         slideSize="80%"
+                        slideGap={50}
                         loop
                         // controlSize={25}
                         previousControlIcon={<IconCaretLeft size={25} fill="black" />}
@@ -45,7 +47,21 @@ export function ProjectDolinaPradnika() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/schemat funkcjonalny.jpg"
+                                src="images/projects/dolina_pradnika/schematFunkcjonalny.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/schematKomunikacji.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/schematZieleni.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -108,7 +124,35 @@ export function ProjectDolinaPradnika() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/rzut parteru.jpg"
+                                src="images/projects/dolina_pradnika/rzutParteru.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/kondygnacjaPowtarzalna.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/najwyzszaKondygnacja.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/poziom-2.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/poziom-1.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
@@ -158,15 +202,17 @@ export function ProjectDolinaPradnika() {
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
                 <Grid.Col xs={12}> 
                     <Center>
-                        <Text align="justify">
+                        <Title align="justify" size={20}>
                             PROJEKT PLANSZ PREZENTUJĄCYCH CAŁY ZAKRES PROJEKTU
-                        </Text>
+                        </Title>
                     </Center>
                 </Grid.Col>
+                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
                 <Grid.Col xs={12}>
                     <Carousel
                         withIndicators
                         slideSize="33.333%"
+                        slideGap="md"
                         loop
                         // controlSize={25}
                         previousControlIcon={<IconCaretLeft size={25} fill="black" />}
@@ -179,6 +225,55 @@ export function ProjectDolinaPradnika() {
                                 width="100%"
                                 radius="md"
                                 src="images/projects/dolina_pradnika/01.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/02.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/03.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/04.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/09.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/10.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/11.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/12.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>

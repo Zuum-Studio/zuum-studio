@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Categories } from "../common/categories/Categories";
 import { ProjectDolinaPradnika } from "./ProjectDolinaPradnika";
 import { ProjectOsrodekTerapii } from "./ProjectOsrodekTerapii";
+import { ProjectPawilon } from "./ProjectPawilon";
 
 const useStyles = createStyles((theme) => ({
     grouping: {
@@ -18,6 +19,7 @@ export function Projects() {
     const contentMap = new Map<string, JSX.Element>([
         ["project-dolina-pradnika", <ProjectDolinaPradnika/>],
         ["project-osrodek-terapii", <ProjectOsrodekTerapii/>],
+        ["project-pawilon", <ProjectPawilon/>],
         ["course", <></>],
     ])
 
@@ -27,7 +29,7 @@ export function Projects() {
             {Categories({
                 items: [
                     {
-                        imageSrc: "images/projects/dolina_pradnika/finalny kadr.jpg",
+                        imageSrc: "images/projects/dolina_pradnika/finalnyKadr.jpg",
                         link: "project-dolina-pradnika",
                         description: "Wielorodzinny zespół mieszkaniowy w dolinie prądnika",
                     },
@@ -43,8 +45,8 @@ export function Projects() {
                     },
                     {
                         imageSrc: "https://i.cbc.ca/1.3355986.1449605277!/fileImage/httpImage/happy-barn-alberta.jpg",
-                        link: "4",
-                        description: "Smutna Stodoła"
+                        link: "project-pawilon",
+                        description: "PAWILON ARCHEOLOGICZNY W WIŚLICY"
                     },
                 ],
                 carousel: true,

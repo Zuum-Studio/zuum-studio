@@ -1,4 +1,4 @@
-import { Box, Image, createStyles, Grid, Skeleton, Text, Center } from "@mantine/core";
+import { Box, Image, createStyles, Grid, Skeleton, Text, Center, Title, } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import { IconArrowRight, IconCaretLeft, IconCaretRight } from "@tabler/icons";
 import { MainImageTitle } from "../common/MainImageTitle";
@@ -8,7 +8,7 @@ const useStyles = createStyles((theme) => ({
 
 }));
 
-export function ProjectOsrodekTerapii() {
+export function ProjectPawilon() {
     const { classes, cx } = useStyles();
 
     return (
@@ -16,176 +16,26 @@ export function ProjectOsrodekTerapii() {
             <Grid>
                 <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col>
                 <Grid.Col xs={12}>
-                    <MainImageTitle title="OŚRODEK TERAPII DLA OSÓB DOROSŁYCH Z AUTYZMEM W KRAKOWIE" description1="STOPIEŃ II, ROK II, SEMESTR III, ROK AKADEMICKI 2020/2021" 
-                    subtitle="PRACA DYPLOMOWA MAGISTERSKA" image="images/projects/osrodek_terapii/mainViz.jpg" 
-                    description2="KATEDRA URBANISTYKI I ARCHITEKTURY STRUKTUR MIEJSKICH A-9" description3="PROMOTOR: DR INŻ. ARCH. ERNESTYNA SZPAKOWSKA - LORANC" description4=""></MainImageTitle>
+                    <MainImageTitle title="WIELORODZINNY ZESPÓŁ MIESZKANIOWY W DOLINIE PRĄDNIKA" description1="STOPIEŃ II, ROK I, SEMESTR I, ROK AKADEMICKI 2019/2020" 
+                    subtitle="" image="images/projects/dolina_pradnika/finalnyKadr.jpg" 
+                    description2="INSTYTUT PROJEKTOWANIA URBANISTYCZNEGO A-31" 
+                    description3="PROWADZĄCY PRZEDMIOT: DR HAB. INŻ. ARCH. MARIUSZ TWARDOWSKI, PROWADZĄCY GRUPĘ: MGR INŻ. ARCH. JULIAN FRANTA"
+                    description4="PROJEKT WYKONANY Z MGR INŻ. ARCH. IWONĄ KOPTĄ"></MainImageTitle>
                 </Grid.Col>   
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
                 <Grid.Col xs={12}> 
                     <Text align="justify">
-                    Projekt zakładał stworzenie przestrzeni przeznaczonej dla osób dorosłych z autyzmem. 
-                    Jest zlokalizowany w Polsce, w Krakowie,w dzielnicy VIII Dębniki, przy ulicy Skotnickiej. 
-                    Projektowany obiekt jest podzielony na 3 funkcje główne: terapeutyczną, warsztatową i mieszkaniową.
-                    Każda z nich jest połączona przejściami (korytarzami) które umożliwiają spokojne dostosowanie się pacjenta na zmianę otoczenia.
-                    Dodatkowo w każdej części budynku znajduję się odpowiednia ilość pomieszczeń do wyciszenia. 
-                    W projekcie nie zabrakło również terenów zielonych : patio ogólnodostępne, patio w części mieszkalnej, wybieg dla zwierząt, ogród sensoryczny i niewielki park. 
-                    Działka na której znajduje się ośrodek jest ogrodzona. 
-
+                        Projekt miał na celu stworzenie koncepcji urbanistyczno - architektonicznej obszaru zlokalizowanego w północnej części Krakowa (Prądnik Biały i wieś Zielonki). 
+                        Teren przeznaczony jest pod zabudowę mieszkaniową wielorodzinną oraz towarzyszącą jej zabudowę usługową. 
+                        Głównym założeniem projektu było zachowanie istniejącego użytku ekologicznego “Dolina Prądnika” i połączenie go z nową funkcją mieszkaniową. 
                     </Text>
                 </Grid.Col> 
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
-                <Grid.Col xs={5}>
+                <Grid.Col xs={6}>
                     <Carousel
                         withIndicators
                         slideSize="80%"
-                        slideGap={20}
-                        // controlSize={25}
-                        previousControlIcon={<IconCaretLeft size={25} fill="black" />}
-                        nextControlIcon={<IconCaretRight size={25} fill="black" />}
-                        align="center"
-                        slidesToScroll={1}
-                    >
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/analizaFunkcjonalna.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/analizaHalasu.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/analizaZieleni.jpg"
-                                alt="me"/>
-                        </Carousel.Slide> 
-                    </Carousel>
-                </Grid.Col>
-                <Grid.Col span={7}>
-                    <Center sx={{height: "100%", width: "100%" }}>
-                        <Text align="justify">
-                        Analizy terenu wykonane przed przystąpieniem do projektowania.
-                        </Text>
-                    </Center>
-                </Grid.Col> 
-                <Grid.Col xs={12}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/aksonometria.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={12}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/zagospodarowanie1000.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={8}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/zagospodarowanie500.jpg"
-                                alt="me"/>
-                    </Grid.Col> 
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/legenda1.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/zdjecie1.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/zdjecie2.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/zdjecie3.jpg"
-                                alt="me"/>
-                    </Grid.Col> 
-                <Grid.Col xs={6}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/schematFunkcji.jpg"
-                                alt="me"/>
-                    </Grid.Col> 
-                <Grid.Col xs={6}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/schematZieleni.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
-                <Grid.Col xs={4}> 
-                    <Center>
-                        <Text align="justify">
-                            RZUT POZIOMU -1
-                        </Text>
-                    </Center>
-                </Grid.Col>
-                <Grid.Col xs={4}> 
-                    <Center>
-                        <Text align="justify">
-                            RZUT PPARTERU
-                        </Text>
-                    </Center>
-                </Grid.Col>
-                <Grid.Col xs={4}> 
-                    <Center>
-                        <Text align="justify">
-                            RZUT PIĘTRA
-                        </Text>
-                    </Center>
-                </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/rzutPiwnicy.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/rzutParteru.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/rzutPietra.jpg"
-                                alt="me"/>
-                    </Grid.Col>  
-                <Grid.Col xs={12}>
-                    <Carousel
-                        withIndicators
-                        slideSize="100%"
-                        slideGap="md"
+                        slideGap={50}
                         loop
                         // controlSize={25}
                         previousControlIcon={<IconCaretLeft size={25} fill="black" />}
@@ -195,104 +45,169 @@ export function ProjectOsrodekTerapii() {
                     >
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan01.jpg"
+                                src="images/projects/dolina_pradnika/schematFunkcjonalny.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan02.jpg"
+                                src="images/projects/dolina_pradnika/schematKomunikacji.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan03.jpg"
+                                src="images/projects/dolina_pradnika/schematZieleni.jpg"
+                                alt="me"/>
+                        </Carousel.Slide>
+                    </Carousel>
+                </Grid.Col>
+                <Grid.Col span={6}>
+                    <Center sx={{height: "100%", width: "100%" }}>
+                        <Text align="justify">
+                        Analizy terenu wykonane przed przystąpieniem do projektowania.
+                        </Text>
+                    </Center>
+                </Grid.Col> 
+                <Grid.Col xs={1}></Grid.Col>
+                <Grid.Col xs={10}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/perspektywa.jpg"
+                                alt="me"/>
+                    </Grid.Col>
+                <Grid.Col xs={12}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/1_1000.jpg"
+                                alt="me"/>
+                    </Grid.Col>
+                <Grid.Col xs={12}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/1_500.jpg"
+                                alt="me"/>
+                    </Grid.Col> 
+                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
+                <Grid.Col xs={12}> 
+                    <Text align="justify">
+                        Dodatkowo indywidualnie do opracowania był projekt wybranego kwartału zabudowy który znajdował się w projekcie.
+                    </Text>
+                </Grid.Col>
+                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
+                <Grid.Col xs={12}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/kadr_02.jpg"
+                                alt="me"/>
+                    </Grid.Col> 
+                <Grid.Col xs={12}>
+                    <Carousel
+                        withIndicators
+                        slideSize="50%"
+                        loop
+                        // controlSize={25}
+                        previousControlIcon={<IconCaretLeft size={25} fill="black" />}
+                        nextControlIcon={<IconCaretRight size={25} fill="black" />}
+                        align="center"
+                        slidesToScroll={1}
+                    >
+                        <Carousel.Slide> 
+                                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/rzutParteru.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan04.jpg"
+                                src="images/projects/dolina_pradnika/kondygnacjaPowtarzalna.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan05.jpg"
+                                src="images/projects/dolina_pradnika/najwyzszaKondygnacja.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan06.jpg"
+                                src="images/projects/dolina_pradnika/poziom-2.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
+                                width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plan07.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                radius="md"
-                                src="images/projects/osrodek_terapii/plan08.jpg"
+                                src="images/projects/dolina_pradnika/poziom-1.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
                 </Grid.Col> 
-                <Grid.Col xs={4}> 
+                <Grid.Col xs={12}> 
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii//greenhouseViz.jpg"
+                                src="images/projects/dolina_pradnika/przekrój_a-a.jpg"
                                 alt="me"/>
                     </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/frontgardenViz.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={4}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/gardenViz.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={6}>
-                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/poolViz.jpg"
-                                alt="me"/>
-                </Grid.Col>
-                <Grid.Col xs={6}>
-                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/osrodek_terapii/sensoryViz.jpg"
-                                alt="me"/>
-                </Grid.Col>
                 <Grid.Col xs={12}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/przekrój_b-b.jpg"
+                                alt="me"/>
+                    </Grid.Col>
+                <Grid.Col xs={6}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/elewacja1.jpg"
+                                alt="me"/>
+                    </Grid.Col>
+                <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/elewacja1.jpg"
+                                src="images/projects/dolina_pradnika/elewacja2.jpg"
+                                alt="me"/>
+                </Grid.Col>
+                <Grid.Col xs={6}>
+                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/elewacja3.jpg"
+                                alt="me"/>
+                </Grid.Col>
+                <Grid.Col xs={6}>
+                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/dolina_pradnika/elewacja1.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
                 <Grid.Col xs={12}> 
                     <Center>
-                        <Text align="justify">
+                        <Title align="justify" size={20}>
                             PROJEKT PLANSZ PREZENTUJĄCYCH CAŁY ZAKRES PROJEKTU
-                        </Text>
+                        </Title>
                     </Center>
                 </Grid.Col>
+                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
                 <Grid.Col xs={12}>
                     <Carousel
                         withIndicators
@@ -302,63 +217,63 @@ export function ProjectOsrodekTerapii() {
                         // controlSize={25}
                         previousControlIcon={<IconCaretLeft size={25} fill="black" />}
                         nextControlIcon={<IconCaretRight size={25} fill="black" />}
-                        align="start"
+                        align="center"
                         slidesToScroll={1}
                     >
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza1.jpg"
+                                src="images/projects/dolina_pradnika/01.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza2.jpg"
+                                src="images/projects/dolina_pradnika/02.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza3.jpg"
+                                src="images/projects/dolina_pradnika/03.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza4.jpg"
+                                src="images/projects/dolina_pradnika/04.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza5.jpg"
+                                src="images/projects/dolina_pradnika/09.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza6.jpg"
+                                src="images/projects/dolina_pradnika/10.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza7.jpg"
+                                src="images/projects/dolina_pradnika/11.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/osrodek_terapii/plansza8.jpg"
+                                src="images/projects/dolina_pradnika/12.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>

@@ -40,6 +40,7 @@ interface MainImageTitleProps {
   subtitle: React.ReactNode;
   description2: React.ReactNode;
   description3: React.ReactNode;
+  description4: React.ReactNode;
   image: string;
 
 }
@@ -50,6 +51,7 @@ export function MainImageTitle({
   subtitle,
   description2,
   description3,
+  description4,
   image,
 
 }: MainImageTitleProps & Omit<CardProps, keyof MainImageTitleProps | 'children'>) {
@@ -83,7 +85,9 @@ export function MainImageTitle({
         <Text size={12} className={classes.description} sx={{maxWidth: "100%"}}>
           {description3}
         </Text>
-        
+        <Text size={12} className={classes.description} sx={{maxWidth: "100%"}}>
+          {description4}
+        </Text>
       </Stack>
     </Card>
   );
