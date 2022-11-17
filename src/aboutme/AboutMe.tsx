@@ -34,10 +34,10 @@ export function AboutMe() {
                     <Text align="justify">
                     We wnętrzach najlepiej odnajduję się w stylu vintage. 
                     Jednak tworzenie w stylu klasycznym, rustykalnym czy nowoczesnym nie jest mi obce. 
-                    Natomiast w architekturze cenię minimalizm, kompozycje z otoczeniem i przemyślany dobór materiałów. 
+                    Natomiast w architekturze cenię minimalizm, harmonię z otoczeniem i przemyślany dobór materiałów. 
                     </Text>
                     <Text align="justify">
-                    Programy w których pracuję: ArchiCAD, AutoCAD, LibreCAD, Adobe Photoshop, SketchUp + V-ray, 3ds Max + Corona 
+                    Programy w których pracuję: ArchiCAD, AutoCAD, LibreCAD, Adobe Photoshop, SketchUp + V-ray, 3ds Max + Corona.
                     </Text>
             </Grid.Col>
         </Grid>
