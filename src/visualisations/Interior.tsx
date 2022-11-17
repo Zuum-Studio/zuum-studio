@@ -37,7 +37,7 @@ export function Interior() {
                     <Image
                             width="100%"
                             radius="md"
-                            src="images/visualisations/interiors/03_kurs_closeup.jpg"
+                            src="images/visualisations/interiors/02a_łazienka.jpg"
                             alt="me"/>
                         </Grid.Col>
                 <Grid.Col span={4}>
@@ -61,11 +61,11 @@ export function Interior() {
                             src="images/visualisations/interiors/04_kurs_interior.jpg"
                             alt="me"/>
                         </Grid.Col>
-                <Grid.Col span={4}>
+                <Grid.Col span={5}>
                     <Image
                             width="100%"
                             radius="md"
-                            src="images/visualisations/interiors/02a_łazienka.jpg"
+                            src="images/visualisations/interiors/03_kurs_closeup.jpg"
                             alt="me"/>
                         </Grid.Col>
                 <Grid.Col span={12}><Box sx={{height: "100px"}}></Box></Grid.Col> 

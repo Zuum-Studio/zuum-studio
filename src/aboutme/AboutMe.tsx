@@ -14,26 +14,30 @@ export function AboutMe() {
                     <Image
                         width="70%"
                         radius="md"
-                        src="zuum-studio/logo192.png"
+                        src="images/AboutMe/foto2.jpg"
                         alt="me"
                     />
                 </Center>
             </Grid.Col>
             <Grid.Col span={6}>
                     <Text align="justify">
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
-                    Mam na imię Zuzia. Moje ulubione liczby to 13 i 18. W wolnych chwilach lubię denerwować biednego Makusia.
+                    Cześć, mam na imię Zuza.
+                    </Text>
+                    <Text align="justify">
+                    Ukończyłam Architekturę i Urbanistykę na Politechnice Krakowskiej. 
+                    W trakcie studiów miałam okazję uczyć się w Stambule i Las Palmas. 
+                    Od 1,5 roku zdobywałam doświadczenie jako architekt wnętrz w biurze projektowym studio hex.
+                    </Text>
+                    <Text align="justify">
+                    Moim zadaniem było tworzenie dokumentacji projektowej, moodboardów, modeli 3d/wizualizacji, przeprowadzanie inwentaryzacji oraz pomoc w doborze materiałów.
+                    </Text>
+                    <Text align="justify">
+                    We wnętrzach najlepiej odnajduję się w stylu vintage. 
+                    Jednak tworzenie w stylu klasycznym, rustykalnym czy nowoczesnym nie jest mi obce. 
+                    Natomiast w architekturze cenię minimalizm, kompozycje z otoczeniem i przemyślany dobór materiałów. 
+                    </Text>
+                    <Text align="justify">
+                    Programy w których pracuję: ArchiCAD, AutoCAD, LibreCAD, Adobe Photoshop, SketchUp + V-ray, 3ds Max + Corona 
                     </Text>
             </Grid.Col>
         </Grid>
