@@ -81,45 +81,47 @@ export function ProjectPawilon() {
                                 src="images/projects/pawilon/analizaStratygraficzna.jpg"
                                 alt="me"/>
                     </Grid.Col>
-                <Grid.Col xs={10}>
+                <Grid.Col xs={9}>
+                    <Center>
+                        <Image
+                                    width="100%"
+                                    radius="md"
+                                    src="images/projects/pawilon/wytyczneProjektowe.jpg"
+                                    alt="me"/>
+                        </Center>
+                    </Grid.Col>
+                <Grid.Col xs={3}>
                     <Image
-                                width="100%"
+                                width="91%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/perspektywa.jpg"
+                                src="images/projects/pawilon/zdjecia.jpg"
                                 alt="me"/>
                     </Grid.Col>
-                <Grid.Col xs={12}>
+                <Grid.Col xs={6}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/1_1000.jpg"
+                                src="images/projects/pawilon/zlotuPtaka.jpg"
                                 alt="me"/>
                     </Grid.Col>
-                <Grid.Col xs={12}>
+                <Grid.Col xs={6}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/1_500.jpg"
-                                alt="me"/>
-                    </Grid.Col> 
-                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col>
-                <Grid.Col xs={12}> 
-                    <Text align="justify">
-                        Dodatkowo indywidualnie do opracowania był projekt wybranego kwartału zabudowy który znajdował się w projekcie.
-                    </Text>
-                </Grid.Col>
-                <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
-                <Grid.Col xs={12}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/kadr_02.jpg"
+                                src="images/projects/pawilon/zagospodarowanie.jpg"
                                 alt="me"/>
                     </Grid.Col> 
                 <Grid.Col xs={12}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/vizFront.jpg"
+                                alt="me"/>
+                    </Grid.Col> 
+                <Grid.Col xs={4}>
                     <Carousel
                         withIndicators
-                        slideSize="50%"
+                        slideSize="100%"
                         loop
                         // controlSize={25}
                         previousControlIcon={<IconCaretLeft size={25} fill="black" />}
@@ -131,79 +133,86 @@ export function ProjectPawilon() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/rzutParteru.jpg"
+                                src="images/projects/pawilon/rzutParteru.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/kondygnacjaPowtarzalna.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/najwyzszaKondygnacja.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/poziom-2.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/poziom-1.jpg"
+                                src="images/projects/pawilon/rzutPiwnicy.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
                 </Grid.Col> 
-                <Grid.Col xs={12}> 
+                <Grid.Col xs={4}> 
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/przekrój_a-a.jpg"
+                                src="images/projects/pawilon/aksoSchemat.jpg"
+                                alt="me"/>
+                    </Grid.Col>
+                <Grid.Col xs={4}>
+                    <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/opisRzuty.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={12}>
                     <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/przekrój_b-b.jpg"
-                                alt="me"/>
-                    </Grid.Col>
-                <Grid.Col xs={6}>
-                    <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/elewacja1.jpg"
+                                src="images/projects/pawilon/przekrojAA.jpg"
                                 alt="me"/>
                     </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/elewacja2.jpg"
+                                src="images/projects/pawilon/przekrojBB.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/elewacja3.jpg"
+                                src="images/projects/pawilon/vizInterior1.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col xs={6}>
                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/elewacja1.jpg"
+                                src="images/projects/pawilon/vizInterior2.jpg"
+                                alt="me"/>
+                </Grid.Col>
+                <Grid.Col xs={6}>
+                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/przekrojCC.jpg"
+                                alt="me"/>
+                </Grid.Col>
+                <Grid.Col xs={6}>
+                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/przekrojCC.jpg"
+                                alt="me"/>
+                </Grid.Col>
+                <Grid.Col xs={6}>
+                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/przekrojCC.jpg"
+                                alt="me"/>
+                </Grid.Col>
+                <Grid.Col xs={12}>
+                <Image
+                                width="100%"
+                                radius="md"
+                                src="images/projects/pawilon/elewacja.jpg"
                                 alt="me"/>
                 </Grid.Col>
                 <Grid.Col span={12}><Box sx={{height: "50px"}}></Box></Grid.Col> 
@@ -231,56 +240,42 @@ export function ProjectPawilon() {
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/01.jpg"
+                                src="images/projects/pawilon/PL_1.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/02.jpg"
+                                src="images/projects/pawilon/PL_2.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/03.jpg"
+                                src="images/projects/pawilon/PL_3.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/04.jpg"
+                                src="images/projects/pawilon/PL_4.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/09.jpg"
+                                src="images/projects/pawilon/PL_5.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                         <Carousel.Slide> 
                                 <Image
                                 width="100%"
                                 radius="md"
-                                src="images/projects/dolina_pradnika/10.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/11.jpg"
-                                alt="me"/>
-                        </Carousel.Slide>
-                        <Carousel.Slide> 
-                                <Image
-                                width="100%"
-                                radius="md"
-                                src="images/projects/dolina_pradnika/12.jpg"
+                                src="images/projects/pawilon/PL_6.jpg"
                                 alt="me"/>
                         </Carousel.Slide>
                     </Carousel>
