@@ -5,6 +5,7 @@ import { AboutMe } from './aboutme/AboutMe'
 import { Projects } from './projects/Projects';
 import { Visualisations } from './visualisations/Visualisations';
 import { Socials } from './Socials';
+import { ScrollUp } from './common/ScrollUp';
 
 const useStyles = createStyles((theme) => ({
   main: {
@@ -101,6 +102,7 @@ export default function App() {
         </Box>
         <Box className={classes.content}>
           {contentMap.get(displayedContent)!}
+          <ScrollUp/>
         </Box>
       </Box>
     </MantineProvider>

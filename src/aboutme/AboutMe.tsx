@@ -1,4 +1,4 @@
-import { Text, Image, createStyles, Grid, Center } from "@mantine/core";
+import { Text, Image, createStyles, Grid, Center, Stack } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
 
@@ -20,7 +20,8 @@ export function AboutMe() {
                 </Center>
             </Grid.Col>
             <Grid.Col span={6}>
-                    <Text align="justify">
+                <Stack justify="center" sx={{height: "100%"}}>
+                    <Text align="justify" size="xl" weight="bold">
                     Cześć, mam na imię Zuza.
                     </Text>
                     <Text align="justify">
@@ -39,6 +40,7 @@ export function AboutMe() {
                     <Text align="justify">
                     Programy w których pracuję: ArchiCAD, AutoCAD, LibreCAD, Adobe Photoshop, SketchUp + V-ray, 3ds Max + Corona.
                     </Text>
+                </Stack>
             </Grid.Col>
         </Grid>
     )
