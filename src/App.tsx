@@ -6,6 +6,7 @@ import { Projects } from './projects/Projects';
 import { Visualisations } from './visualisations/Visualisations';
 import { Socials } from './Socials';
 import { ScrollUp } from './common/ScrollUp';
+import { Footer, FOOTER_HEIGHT } from './Footer';
 
 const useStyles = createStyles((theme) => ({
   main: {
@@ -32,13 +33,18 @@ const useStyles = createStyles((theme) => ({
     height: `calc(100vh - ${HEADER_HEIGHT}px)`,
   },
 
+  footer: {
+
+  },
+
   content: {
+    overflowY: 'scroll',
+
     paddingTop: '13%',
     // paddingTop: `calc(((100vh - ${HEADER_HEIGHT}px) / 2) - ${HEADER_HEIGHT}px)`,
     paddingLeft: 200,
     paddingRight: 200,
-    height: `calc(100vh - ${HEADER_HEIGHT}px)`,
-    overflowY: 'scroll',
+    height: `calc(100vh - ${HEADER_HEIGHT}px - ${FOOTER_HEIGHT}px)`,
     marginRight: 13,
     marginLeft: 13,
   }
@@ -104,6 +110,7 @@ export default function App() {
           {contentMap.get(displayedContent)!}
           <ScrollUp/>
         </Box>
+        <Footer></Footer>
       </Box>
     </MantineProvider>
   );
