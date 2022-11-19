@@ -1,28 +1,60 @@
 import { IconArrowUp } from '@tabler/icons';
 import { useWindowScroll } from '@mantine/hooks';
-import { Affix, Button, Text, Transition } from '@mantine/core';
+import { Affix, Box, Button, Text, Transition } from '@mantine/core';
+import React, { useRef, useState } from 'react';
 
-export function ScrollUp() {
-  const [scroll, scrollTo] = useWindowScroll();
+export const SCROLLABLE_CONTENT_ID = "scrollable-content-id"
+const SCROLL_UP_THRESHOLD = 500
 
-  return (
-    <>
+interface ScrollUpProps {
+  
+}
 
+interface ScrollUpState {
+  scrollThresholdReached: boolean
+}
+
+export class ScrollUp extends React.Component<ScrollUpProps, ScrollUpState> {
+
+  constructor(props: ScrollUpProps) {
+    super(props);
+    this.state = {
+      scrollThresholdReached: false
+    };
+  }
+
+  componentDidMount() {
+    const scrollableContent = document.getElementById(SCROLLABLE_CONTENT_ID);
+    scrollableContent!.addEventListener("scroll", event => {
+      if (scrollableContent!.scrollTop > SCROLL_UP_THRESHOLD) {
+        this.setState({scrollThresholdReached: true})
+      } else {
+        this.setState({scrollThresholdReached: false})
+      }
+    }, { passive: true });
+  }
+
+  render() {
+    return (
       <Affix position={{ bottom: 20, right: 20 }}>
-      
-        <Transition transition="slide-up" mounted={scroll.y > 0}>
-        
+        <Box id="scroll-value"></Box>
+        <Transition transition="slide-up" mounted={this.state.scrollThresholdReached}>
+          
           {(transitionStyles) => (
+        
             <Button
               leftIcon={<IconArrowUp size={16} />}
               style={transitionStyles}
-              onClick={() => scrollTo({ y: 0 })}
+              onClick={() => {
+                document.getElementById(SCROLLABLE_CONTENT_ID)!.scrollTop = 100
+              }
+            }
             >
-              Scroll to top
+              Do góry
             </Button>
           )}
         </Transition>
       </Affix>
-    </>
-  );
+    );  
+  }
 }

@@ -1,11 +1,11 @@
 import { Affix, Avatar, Blockquote, Box, Button, Center, Collapse, Container, createStyles, Divider, MantineProvider, Overlay, Stack, Text, Title, Tooltip, Transition } from '@mantine/core';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { HEADER_HEIGHT, ZuumHeader } from './Header'
 import { AboutMe } from './aboutme/AboutMe'
 import { Projects } from './projects/Projects';
 import { Visualisations } from './visualisations/Visualisations';
 import { Socials } from './Socials';
-import { ScrollUp } from './common/ScrollUp';
+import { SCROLLABLE_CONTENT_ID, ScrollUp } from './common/ScrollUp';
 import { Footer, FOOTER_HEIGHT } from './Footer';
 
 const useStyles = createStyles((theme) => ({
@@ -60,7 +60,8 @@ export default function App() {
     ["visualisations", <Visualisations />],
   ])
   const { classes, cx } = useStyles();
-
+  const contentRef = useRef(null);
+  
   function onMenuItemSelected(link: string) {
     setSelectedMenuItem(link)
     if (link !== '') {
@@ -106,7 +107,7 @@ export default function App() {
             onSelected: (link) => onMenuItemSelected(link)
           })}
         </Box>
-        <Box className={classes.content}>
+        <Box className={classes.content} ref={contentRef} id={SCROLLABLE_CONTENT_ID}>
           {contentMap.get(displayedContent)!}
           <ScrollUp/>
         </Box>
