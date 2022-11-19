@@ -45,8 +45,8 @@ const useStyles = createStyles((theme) => ({
 
     paddingTop: '13%',
     // paddingTop: `calc(((100vh - ${HEADER_HEIGHT}px) / 2) - ${HEADER_HEIGHT}px)`,
-    paddingLeft: 200,
-    paddingRight: 200,
+    paddingLeft: "10%",
+    paddingRight: "10%",
     height: `calc(100vh - ${HEADER_HEIGHT}px - ${FOOTER_HEIGHT}px)`,
     marginRight: 13,
     marginLeft: 13,
